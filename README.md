@@ -53,6 +53,9 @@ We will come back to themeing zsh, for now lets move on to installing an my favo
 ```bash
 brew cask install visual-studio-code
 ```
+Now you can use `code (file_path|dir_path| )` to open a file, directory, or just the ide itself.
+
+
 
 Pre-emptively fix font in vscode integrated terminal.
 ```
@@ -69,7 +72,6 @@ Once settings.json is open add/edit the following keys
 The font isn't available right now; but we will install it below.
 You may update this to whatever powerline font you want to use.
 
-Now you can use `code (file_path|dir_path| )` to open a file, directory, or just the ide itself.
 
 ## Theming your terminal
 
