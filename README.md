@@ -145,4 +145,39 @@ ZSH_THEME="agnoster"
 DEFAULT_USER=`whoami`
 ```
 
+## Install xcode and xcode CLI
+```bash
+xcode-select --install
+```
+
+Next, install XCode from the App Store
+
+## Install custom python versions
+Mac OS' default python versions are unreliable. It is usually better to install fresh python versions globally to ensure things install/execute adequately.
+
+I recommend using [pyenv](https://github.com/pyenv/pyenv) to manage python versions
+```bash
+brew install pyenv
+```
+
+```bash
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+```
+
+Before you install python; ensure you install python build dependencies
+```bash
+brew install openssl readline sqlite3 xz zlib
+```
+
+Install the latest py2 and py3 versions.
+Yes, sadly somethings still need py2 even though support has been dropped officially...
+
+At the time of writing python 3.7, and 2.7.9 or higher.
+
+If you run into any issues with installing python you can checkout https://github.com/pyenv/pyenv/wiki/common-build-problems
+
+```bash
+pyenv install 3.7.7
+pyenv install 2.7.14
+```
 
