@@ -54,6 +54,21 @@ We will come back to themeing zsh, for now lets move on to installing an my favo
 brew cask install visual-studio-code
 ```
 
+Pre-emptively fix font in vscode integrated terminal.
+```
+cmd + shift + p
+Preferences: Open Settings (JSON)
+```
+
+Once settings.json is open add/edit the following keys
+```bash
+"terminal.integrated.shell.osx": "/bin/zsh",
+"editor.fontFamily": "Source Code Pro for Powerline",
+```
+
+The font isn't available right now; but we will install it below.
+You may update this to whatever powerline font you want to use.
+
 Now you can use `code (file_path|dir_path| )` to open a file, directory, or just the ide itself.
 
 ## Theming your terminal
