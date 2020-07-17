@@ -98,6 +98,8 @@ From menu: _Iterm2 -> Preferences -> Profiles -> Default -> Colors -> Color Pres
 
 In the same profiles section: _Iterm2 -> Preferences -> Profiles -> Default -> Session -> Status Bar Enabled -> Configure Status Bar
 
+Mine looks like this:
+![](status_bar.png)
 
 
 In the same profiles section: _Iterm2 -> Preferences -> Profiles -> Default -> Text -> Font -> {Choose a Powerline supported font we just installed}
@@ -110,6 +112,7 @@ when running `echo "\ue0b0 \u00b1 \ue0a0 \u27a6 \u2718 \u26a1 \u2699"`
 
 
 **Changing Theme**
+
 You `.zshrc` file contains all information on zsh plugins and themeing. We will now edit it to make your terminal pop!
 
 ```shell
@@ -124,4 +127,5 @@ Add `DEFAULT_USER` env var while you are at it!
 ZSH_THEME="agnoster"
 DEFAULT_USER=`whoami`
 ```
+
 
