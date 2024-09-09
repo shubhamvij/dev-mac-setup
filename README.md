@@ -17,7 +17,7 @@ Iterm2 is highly customizable and comes with a lot of useful features.
 
 Now that you have homebrew installed:
 ```bash
-brew cask install iterm2
+brew install --cask iterm2
 ```
 
 Let's open up iterm!
@@ -51,7 +51,7 @@ We will come back to themeing zsh, for now lets move on to installing an my favo
 
 ## Installing [VSCode](https://code.visualstudio.com/) (the last ide you will ever need)
 ```bash
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 Now you can use `code (file_path|dir_path| )` to open a file, directory, or just the ide itself.
 
@@ -109,7 +109,7 @@ rm -rf fonts
 ```
 
 
-From menu: _Iterm2 -> Preferences -> Profiles -> Default -> Colors -> Color Presets -> {Chose a preset or visit the online gallery to see more}_
+From menu: _Iterm2 -> Settings -> Profiles -> Default -> Colors -> Color Presets -> {Chose a preset or visit the online gallery to see more}_
 
 ** You may want to uncheck Brighten Bold Text
 
