@@ -44,7 +44,7 @@ chsh -s /usr/local/bin/zsh
 
 Install oh-my zsh
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 We will come back to themeing zsh, for now lets move on to installing an my favourite ide
@@ -65,8 +65,7 @@ Preferences: Open Settings (JSON)
 
 Once settings.json is open add/edit the following keys
 ```bash
-"terminal.integrated.shell.osx": "/bin/zsh",
-"editor.fontFamily": "Source Code Pro for Powerline",
+"editor.fontFamily": "Source Code Pro for Powerline"
 ```
 
 The font isn't available right now; but we will install it below.
@@ -113,13 +112,13 @@ From menu: _Iterm2 -> Settings -> Profiles -> Default -> Colors -> Color Presets
 
 ** You may want to uncheck Brighten Bold Text
 
-In the same profiles section: _Iterm2 -> Preferences -> Profiles -> Default -> Session -> Status Bar Enabled -> Configure Status Bar
+In the same profiles section: _Iterm2 -> Settings -> Profiles -> Default -> Session -> Status Bar Enabled -> Configure Status Bar
 
 Mine looks like this:
 ![](status_bar.png)
 
 
-In the same profiles section: _Iterm2 -> Preferences -> Profiles -> Default -> Text -> Font -> {Choose a Powerline supported font we just installed}
+In the same profiles section: _Iterm2 -> Settings -> Profiles -> Default -> Text -> Font -> {Choose a Powerline supported font we just installed}
 
 ** I use Source Code Pro for Powerline
 
@@ -144,13 +143,6 @@ Add `DEFAULT_USER` env var while you are at it!
 ZSH_THEME="agnoster"
 DEFAULT_USER=`whoami`
 ```
-
-## Install xcode and xcode CLI
-```bash
-xcode-select --install
-```
-
-Next, install XCode from the App Store
 
 ## Install custom python versions
 Mac OS' default python versions are unreliable. It is usually better to install fresh python versions globally to ensure things install/execute adequately.
